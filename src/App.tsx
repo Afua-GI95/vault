@@ -1,6 +1,6 @@
 //import { useState } from "react";
 //import reactLogo from "./assets/react.svg";
-import upstreamLogo from ".undraw_icon_design_re_9web.svg";
+//import upstreamLogo from ".undraw_icon_design_re_9web.svg";
 import "./App.css";
 
 let urlMain = window.location.href.split("/");
@@ -19,12 +19,14 @@ let playlistId: string;
 
 let bgInterval = setInterval(() => {
   let navBr = document.getElementById("nav") as HTMLElement;
-  type RGB = [number, number, number];
+  // type RGB = [number, number, number];
 
   navBr.style.backgroundColor = `rgb(${Math.floor(
     Math.random() * 255
   )}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`;
 }, 1000);
+
+bgInterval;
 
 // let bulb = document.getElementById("bulbDiv") as HTMLElement;
 // let bodContainer = document.getElementById("body") as HTMLElement;
@@ -198,11 +200,11 @@ function App() {
 
   // addMusic(accessToken);
 
-  let plusDiv = document.getElementById("plusDiv") as HTMLElement;
+  //let plusDiv = document.getElementById("plusDiv") as HTMLElement;
   const displayRecent = () => {
     console.log("plus sign clicked!");
     let container = document.getElementById("container") as HTMLElement;
-    let recent = document.getElementById("recent") as HTMLElement;
+    // let recent = document.getElementById("recent") as HTMLElement;
 
     container.style.display = "none";
 
